@@ -10,16 +10,17 @@
   }
 }
 
-
 table {
   margin-top: 20px;
 }
 
 .first {
+
   &__h4 {
     text-transform: uppercase;
     &--auto {
       font-family: 'Abril Fatface', sans-serif;
+      //font-family: 'Open Sans', sans-serif;
     }
 
     &--block {
