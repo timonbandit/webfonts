@@ -11,6 +11,17 @@
 </head>
 
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.13/fontfaceobserver.js"></script>
+<script>
+  var font1 = new FontFaceObserver('Abril Fatface');
+  var font2 = new FontFaceObserver('Bungee');
+  var font3 = new FontFaceObserver('Fjalla One');
+  var font4 = new FontFaceObserver('Anton');
+  var font5 = new FontFaceObserver('Lobster');
+  font1.load().then(function () {
+    console.log("Abril loaded")
+  })
+</script>
 <!--[if lt IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -21,13 +32,14 @@
   </div>
 </nav>
 
-<div class="main second">
+<div class="main first first--fontfaceobserver">
   <div class="container">
     <div class="row justify-content-md-center">
       <div class="col-md-8">
         <div class="alert alert-success" role="alert">
-          <h4 class="alert-heading">Web Font Loader</h4>
-          <p class="mb-0">Loading fonts via Typekit font loader</p>
+          <h4 class="alert-heading">Font Face Observer</h4>
+          <p class="mb-0">Loading fonts via <a href="https://github.com/bramstein/fontfaceobserver" target="_blank">Font
+            Face Observer</a></p>
           <table class="table table-bordered table-responsive-lg table-dark">
             <thead>
             <tr>
@@ -41,12 +53,12 @@
               <td>JS</td>
             </tr>
             <tr>
-              <td>Easy to start</td>
-              <td>Flash of Unstyled Text.(if loaded asynchronously)</td>
+              <td>"Monitor when a webfont is loaded and notify you"</td>
+              <td>Totaly useless :) Anyway browser loads your fonts. just a lib for ...</td>
             </tr>
             <tr>
-              <td>Can be loaded synchronously to avoid FOUT but blocks page rendering</td>
-              <td>Small flashing on every page loaded (with/without a cache)</td>
+              <td></td>
+              <td>Blocks render</td>
             </tr>
             </tbody>
           </table>
@@ -57,30 +69,15 @@
     <div class="row justify-content-md-center">
       <div class="col-md-10">
         <div class="jumbotron">
-          <h4 class="display-4 second__h4 second__h4--indie">font-display: auto;</h4>
-          <h4 class="display-4 second__h4 second__h4--pacifico">font-display: block;</h4>
-          <h4 class="display-4 second__h4 second__h4--bree">font-display: swap;</h4>
-          <h4 class="display-4 second__h4 second__h4--shadows">font-display: fallback;</h4>
-          <h4 class="display-4 second__h4 second__h4--acme">font-display: optional;</h4>
+          <h4 class="display-4 first__h4 first__h4--auto">font-display: auto;</h4>
+          <h4 class="display-4 first__h4 first__h4--block">font-display: block;</h4>
+          <h4 class="display-4 first__h4 first__h4--swap">font-display: swap;</h4>
+          <h4 class="display-4 first__h4 first__h4--fallback">font-display: fallback;</h4>
+          <h4 class="display-4 first__h4 first__h4--optional">font-display: optional;</h4>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script>
-  WebFontConfig = {
-    google: {
-      families: ['Indie Flower', 'Pacifico', 'Bree Serif', 'Shadows Into Light', 'Acme']
-    }
-  };
-
-  (function(d) {
-    var wf = d.createElement('script'), s = d.scripts[0];
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-    wf.async = true;
-    s.parentNode.insertBefore(wf, s);
-  })(document);
-
-</script>
 </body>
 </html>
