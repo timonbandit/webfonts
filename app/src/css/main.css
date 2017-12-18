@@ -2,6 +2,46 @@
   padding-right: 0;
   padding-left: 0; }
 
+.main {
+  padding-top: 40px; }
+
+.navbar {
+  background: var(--primary); }
+  .navbar-brand {
+    color: var(--white);
+    font-weight: 700; }
+
+.first__h4 {
+  text-transform: uppercase; }
+  .first__h4--auto {
+    font-family: 'Abril Fatface', sans-serif; }
+  .first__h4--block {
+    font-family: 'Bungee', cursive; }
+  .first__h4--swap {
+    font-family: 'Fjalla One', sans-serif; }
+  .first__h4--fallback {
+    font-family: 'Anton', sans-serif; }
+  .first__h4--optional {
+    font-family: 'Lobster', cursive; }
+
+.first table {
+  margin-top: 20px; }
+
+/*Responsive start*/
+/*UltraLarge screens start*/
+/*UltraLarge screens stop*/
+/*Large screens*/
+/*Laptops*/
+/*Tablet*/
+/*Tablet Stop*/
+/*Small devices Start*/
+/*Small devices Stop*/
+/*Phone Start*/
+/*Pages stop*/
+/*Phone Stop*/
+/*small phone start*/
+/*small phone stop*/
+/*Responsive stop*/
 /* latin-ext */
 @font-face {
   font-family: 'Abril Fatface';
@@ -94,44 +134,3 @@ html {
 
 body {
   color: #2a303d; }
-
-.main {
-  padding-top: 40px; }
-
-.navbar {
-  background: var(--primary); }
-  .navbar-brand {
-    color: var(--white);
-    font-weight: 700; }
-
-.first__h4 {
-  text-transform: uppercase; }
-  .first__h4--auto {
-    font-family: 'Abril Fatface', sans-serif; }
-  .first__h4--block {
-    font-family: 'Bungee', cursive; }
-  .first__h4--swap {
-    font-family: 'Fjalla One', sans-serif; }
-  .first__h4--fallback {
-    font-family: 'Anton', sans-serif; }
-  .first__h4--optional {
-    font-family: 'Lobster', cursive; }
-
-.first table {
-  margin-top: 20px; }
-
-/*Responsive start*/
-/*UltraLarge screens start*/
-/*UltraLarge screens stop*/
-/*Large screens*/
-/*Laptops*/
-/*Tablet*/
-/*Tablet Stop*/
-/*Small devices Start*/
-/*Small devices Stop*/
-/*Phone Start*/
-/*Pages stop*/
-/*Phone Stop*/
-/*small phone start*/
-/*small phone stop*/
-/*Responsive stop*/
