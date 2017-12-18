@@ -11,6 +11,9 @@
     color: var(--white);
     font-weight: 700; }
 
+table {
+  margin-top: 20px; }
+
 .first__h4 {
   text-transform: uppercase; }
   .first__h4--auto {
@@ -24,8 +27,18 @@
   .first__h4--optional {
     font-family: 'Lobster', cursive; }
 
-.first table {
-  margin-top: 20px; }
+.second__h4 {
+  text-transform: uppercase; }
+  .second__h4--indie {
+    font-family: 'Indie Flower', cursive; }
+  .second__h4--pacifico {
+    font-family: 'Pacifico', cursive; }
+  .second__h4--bree {
+    font-family: 'Bree Serif', serif; }
+  .second__h4--shadows {
+    font-family: 'Shadows Into Light', cursive; }
+  .second__h4--acme {
+    font-family: 'Acme', sans-serif; }
 
 /*Responsive start*/
 /*UltraLarge screens start*/

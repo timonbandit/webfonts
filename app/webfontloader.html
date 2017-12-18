@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/webfonts">Home</a>
+  </div>
+</nav>
+
+<div class="main second">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Web Font Loader</h4>
+          <p class="mb-0">Loading fonts via Typekit font loader</p>
+          <table class="table table-bordered table-responsive-lg table-dark">
+            <thead>
+            <tr>
+              <th scope="col">pros</th>
+              <th scope="col">cons</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Works anywhere</td>
+              <td>JS</td>
+            </tr>
+            <tr>
+              <td>Easy to start</td>
+              <td>Flash of Unstyled Text.(if loaded asynchronously)</td>
+            </tr>
+            <tr>
+              <td>Can be loaded synchronously to avoid FOUT but blocks page rendering</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
+        <div class="jumbotron">
+          <h4 class="display-4 second__h4 second__h4--indie">font-display: auto;</h4>
+          <h4 class="display-4 second__h4 second__h4--pacifico">font-display: block;</h4>
+          <h4 class="display-4 second__h4 second__h4--bree">font-display: swap;</h4>
+          <h4 class="display-4 second__h4 second__h4--shadows">font-display: fallback;</h4>
+          <h4 class="display-4 second__h4 second__h4--acme">font-display: optional;</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  WebFontConfig = {
+    google: {
+      families: ['Indie Flower', 'Pacifico', 'Bree Serif', 'Shadows Into Light', 'Acme']
+    }
+  };
+
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+    wf.async = true;
+    s.parentNode.insertBefore(wf, s);
+  })(document);
+
+</script>
+</body>
+</html>

@@ -10,6 +10,11 @@
   }
 }
 
+
+table {
+  margin-top: 20px;
+}
+
 .first {
   &__h4 {
     text-transform: uppercase;
@@ -35,8 +40,30 @@
     }
 
   }
+}
 
-  table {
-    margin-top: 20px;
+.second {
+  &__h4 {
+    text-transform: uppercase;
+
+    &--indie {
+      font-family: 'Indie Flower', cursive;
+    }
+
+    &--pacifico {
+      font-family: 'Pacifico', cursive;
+    }
+
+    &--bree {
+      font-family: 'Bree Serif', serif;
+    }
+
+    &--shadows {
+      font-family: 'Shadows Into Light', cursive;
+    }
+
+    &--acme {
+      font-family: 'Acme', sans-serif;
+    }
   }
 }
