@@ -1,1 +1,42 @@
-.main {}
+.main {
+  padding-top: 40px;
+}
+
+.navbar {
+  background: var(--primary);
+  &-brand {
+    color: var(--white);
+    font-weight: 700;
+  }
+}
+
+.first {
+  &__h4 {
+    text-transform: uppercase;
+    &--auto {
+      font-family: 'Abril Fatface', sans-serif;
+    }
+
+    &--block {
+      font-family: 'Bungee', cursive;
+    }
+
+    &--swap {
+
+      font-family: 'Fjalla One', sans-serif;
+    }
+
+    &--fallback {
+      font-family: 'Anton', sans-serif;
+    }
+
+    &--optional {
+      font-family: 'Lobster', cursive;
+    }
+
+  }
+
+  table {
+    margin-top: 20px;
+  }
+}
